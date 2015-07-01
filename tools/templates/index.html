@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>即用API体验专区</title>
+        {% load static from staticfiles %}
+        <link href="{% static "Css/weather.css" %}" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="main">
+            <div id="sidebar">
+                <ul id="nav">
+                    <li class="ready-record">
+                        <a class="ready-thumb">
+                            <div class="ready-thumb-img"></div>
+                            <p class="ready-desc">
+                                查询当天天气的基本情况，包括气温，风向，风速等信息；提供天气信息包括：当前时间、当前气温、最高气温、最低气温、天气情况，晴，多云等、风向、风速、经纬度、海拔、日出日落时间
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+                <div id="params-table">
+                    <div id="params_key">城市名：</div>
+                    <input type="text" name="citypinyin" id="value" placeholder="请输入查询城市(如:北京)" autofocus>
+                    <button name="submit" id="submit">查询</button>
+                </div>
+            </div>
+            <div id="history">
+                <h3>查询历史</h3>
+            <ol id="history_record"></ol>
+        </div>
+        <div id="info">
+            <ul id="rs_tpl" class="result-table">
+                {% include 'result_tpl.html' %}
+            </ul>
+        </div>
+    </div>
+    <script data-main="{% static "Js/main" %}" src="{% static "Js/require.js" %}"></script>
+</body>
+</html>

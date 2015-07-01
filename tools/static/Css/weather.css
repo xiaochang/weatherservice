@@ -1,0 +1,150 @@
+html,body{
+    padding: 0px;
+    margin: 0px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 98%;
+    background:url(../Images/bg0.png) repeat #f4f4f4; 
+    font-size: 13px; 
+    border: none;
+}
+#main{
+    position: relative;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    top:50px;
+}
+
+#main #sidebar{
+    width: 270px;
+    height: 100%;
+    float: left;
+}
+#main #sidebar #nav{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#main #sidebar #nav .ready-record{
+    padding: 0px 9px;
+    margin: 0px 0 0 20px;
+    width: 206px;
+    height: 170px;
+    background: #fff;
+    border: 1px solid #cecece;
+    position: relative;
+    color: #2082f2;
+}
+#main #sidebar #nav .ready-record .ready-thumb{
+    text-decoration: none;
+    cursor: pointer;
+    height: 150px;
+    display: block;
+}
+#main #sidebar #nav .ready-record .ready-thumb .ready-thumb-img{
+    display: block;
+    width: 206px;
+    height: 101px;
+    overflow: hidden;
+    position: relative;
+    background: url(../Images/img1.jpg) no-repeat;
+}
+#main #sidebar #nav .ready-record .ready-thumb .ready-desc{
+    text-decoration: none;
+    position: absolute;
+    width: 186px;
+    background: url(../Images/bg1.png) repeat;
+    color: #fff;
+    font-size: 13px;
+    line-height: 15px;
+    top: 0;
+    padding: 10px;
+    display: none;
+}
+#main #sidebar #params-table {
+    margin: 20px 0 0 20px;
+    width: 206px;
+}
+#main #sidebar #params-table #params_key{
+    color: #2082f2;
+    font-size: 17px;
+    line-height: 40px;
+    font-weight: 400;
+}
+#main #sidebar #params-table #value{
+    width: 220px;
+    height: 30px;
+}
+#main #sidebar #params-table #submit{
+    background-color: #3f89ec;
+    width:224px;
+    height: 40px;
+    line-height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bolder;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+#main #info{
+    margin:0px 280px;
+    height: 100%;
+}
+#main #info .result-table{
+    border:dashed 2px #3f89ec;
+    min-height: 90%;
+    padding: 4%;
+}
+#main #info .result-table li{
+    list-style: none;
+    margin: 5px;
+}
+#main #info .result-table .key{
+    font-size: 15px;
+    font-weight: 400px;
+    color: #00a3cf;
+}
+#main #info .result-table .value{
+    font-size: 15px;
+    font-weight: 400px;
+    color: #333;
+    margin-left: 5px;
+}
+#main #history{
+    width: 240px;
+    height: 100%;
+    float: right;
+    border: 1px solid #cecece;
+    color: #2082f2;
+}
+#main #history h3{
+    width:240px;
+    height:30px;
+    line-height: 30px;
+    vertical-align: middle;
+    text-align: center; 
+    color: #2082f2;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-top: 10px;
+    border-bottom: solid 1px #ccc;
+}
+#main #history #history_record{
+    color: #666;
+    font-size: 15px;
+}
+#main #history #history_record li a{
+    color: #666;
+    font-size: 15px;
+    text-decoration: none;
+    margin-top:5px; 
+    cursor: pointer;
+}
+#main #history #history_record li span{
+    padding:2px; 
+}
